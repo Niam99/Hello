@@ -1,0 +1,29 @@
+* Notes
+
+** Emacs keybindings
+
+-c = compile
+-o = link-clear buffers c-x c-s
+-split vertical c-x 3
+-split horizontal c-x 2
+-directory c-x c-d
+-compiling c-c c
+-shell M-x shell
+-change buffers c-x b
+-close buffer c-x k
+-exit emacs c-x c-c
+-undo c-x u
+-search: c-s
+-copy: select with arrows the m-w
+-paste: m-y
+-delete line: c-k
+-clock in: c-c c-x c-i
+_clock out: c-c c-x c-o
+
+
+* Tasks
+
+** Setup CMake
+   CLOCK: [2018-01-04 Thu 13:31]--[2018-01-04 Thu 14:15] =>  0:44
+
+- link to tutorial: http://derekmolloy.ie/hello-world-introductions-to-cmake/
