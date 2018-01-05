@@ -27,3 +27,5 @@ _clock out: c-c c-x c-o
    CLOCK: [2018-01-04 Thu 13:31]--[2018-01-04 Thu 14:15] =>  0:44
 
 - link to tutorial: http://derekmolloy.ie/hello-world-introductions-to-cmake/
+** frame name program
+   CLOCK: [2018-01-05 Fri 13:30]--[2018-01-05 Fri 13:50] =>  0:20
