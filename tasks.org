@@ -46,4 +46,6 @@ _clock out: c-c c-x c-o
 ** frame loop program
    CLOCK: [2018-01-08 Mon 9:30]--[2018-01-08 Mon 10:07] =>  0:37
 ** grade task
-   CLOCK: [2018-01-08 Mon 11:30]
+   CLOCK: [2018-01-08 Mon 11:30]--[2018-01-08 Mon 14:02] =>  2:32
+** build boost
+   CLOCK: [2018-01-08 Mon 13:00]--[2018-01-08 Mon 14:03] =>  1:03
