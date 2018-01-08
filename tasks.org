@@ -3,7 +3,9 @@
 ** Emacs keybindings
 
 -c = compile
--o = link-clear buffers c-x c-s
+-o = link
+-clear buffers c-x 1
+-save  c-x c-s
 -split vertical c-x 3
 -split horizontal c-x 2
 -directory c-x c-d
@@ -42,10 +44,71 @@ _clock out: c-c c-x c-o
 
 ** frame name program 1
    CLOCK: [2018-01-05 Fri 13:30]--[2018-01-05 Fri 13:50] =>  0:20
+   chapter 1 in book
+   project1 file
 
 ** frame loop program
    CLOCK: [2018-01-08 Mon 9:30]--[2018-01-08 Mon 10:07] =>  0:37
+   chapter 2 in book
+   project2 file
 ** grade task
    CLOCK: [2018-01-08 Mon 11:30]--[2018-01-08 Mon 14:02] =>  2:32
+   chapter 3 in book
+   gradeproj file
+
 ** build boost
    CLOCK: [2018-01-08 Mon 13:00]--[2018-01-08 Mon 14:03] =>  1:03
+
+1. copy files from green USB key for boost and wt. copy them into ~/Development.
+2. unpack boost:
+
+tar -xaf boost_1_66_0.tar.bz2
+
+3. build boost:
+
+cd boost_1_66_0/
+./bootstrap.sh
+./b2 --prefix=/home/marco/local
+./b2 --prefix=/home/marco/local --install
+
+replace "marco" with your username, here and on all other commands below.
+
+4. when boost is finished, you can start with witty. unpack witty:
+
+tar -xaf witty-4.0.2.tar.gz
+
+5. build witty:
+
+cd wt-4.0.2
+export CMAKE_INCLUDE_PATH=/home/marco/local/include
+export CMAKE_LIBRARY_PATH=/home/marco/local/lib
+mkdir build
+cd build
+cmake ..
+make -j 4
+make install
+
+6. create a new project, and add the following to the CMake file (in
+addition to what you normally add) add the following:
+
+6.1 after the project:
+
+find_package(Wt REQUIRED)
+
+6.2 after the target (e.g. the line with target_link_libraries):
+
+target_link_libraries(PROJECT ${Wt_LIBRARIES})
+
+7. manually copy the contents of this file:
+
+https://www.webtoolkit.eu/wt/src/hello
+
+8. build and run it. you need to run it with the following parameters:
+
+./PROJECT  --docroot . --http-address 0.0.0.0 --http-port 8080
+
+9. go to chrome and type:
+
+http://localhost:8080
+
+if all goes well you should see the hello world.
