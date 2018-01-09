@@ -9,8 +9,6 @@
   The precision determines the maximum number of digits that shall be output on insertion operations to express floating-point values, counting both the digits before and after the decimal point.
   You must include <iomanip> to use this manipulator.
 
-
-
 ** end-of-file
     = ctrl-d
 
