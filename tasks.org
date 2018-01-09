@@ -1,5 +1,7 @@
 * Notes
 
+** end-of-file = ctrl-d
+
 ** Emacs keybindings
 
 -c = compile
@@ -20,20 +22,24 @@
 -paste: m-y
 -delete line: c-k
 -clock in: c-c c-x c-i
-_clock out: c-c c-x c-o
+-clock out: c-c c-x c-o
+-update clock grid
 
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-08 Mon 10:03]
+#+CAPTION: Clock summary at [2018-01-09 Tue 09:57]
 | <75>                                                                        |        |      |   |       |
 | Headline                                                                    | Time   |      |   |     % |
 |-----------------------------------------------------------------------------+--------+------+---+-------|
-| *Total time*                                                                | *1:04* |      |   | 100.0 |
+| *Total time*                                                                | *5:16* |      |   | 100.0 |
 |-----------------------------------------------------------------------------+--------+------+---+-------|
-| Tasks                                                                       | 1:04   |      |   | 100.0 |
-| Setup CMake                                                                 |        | 0:44 |   |  68.8 |
-| frame name program 1                                                        |        | 0:20 |   |  31.2 |
+| Tasks                                                                       | 5:16   |      |   | 100.0 |
+| Setup CMake                                                                 |        | 0:44 |   |  13.9 |
+| frame name program 1                                                        |        | 0:20 |   |   6.3 |
+| frame loop program                                                          |        | 0:37 |   |  11.7 |
+| grade task                                                                  |        | 2:32 |   |  48.1 |
+| build boost                                                                 |        | 1:03 |   |  19.9 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end
 
@@ -112,3 +118,6 @@ https://www.webtoolkit.eu/wt/src/hello
 http://localhost:8080
 
 if all goes well you should see the hello world.
+
+** chapter 4
+   CLOCK: [2018-01-09 Tue 09:56]
