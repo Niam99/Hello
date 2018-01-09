@@ -38,21 +38,21 @@
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-09 Tue 11:54]
+#+CAPTION: Clock summary at [2018-01-09 Tue 14:44]
 | <75>                                                                        |        |      |   |       |
 | Headline                                                                    | Time   |      |   |     % |
 |-----------------------------------------------------------------------------+--------+------+---+-------|
-| *Total time*                                                                | *7:13* |      |   | 100.0 |
+| *Total time*                                                                | *8:27* |      |   | 100.0 |
 |-----------------------------------------------------------------------------+--------+------+---+-------|
-| Tasks                                                                       | 7:13   |      |   | 100.0 |
-| Setup CMake                                                                 |        | 0:44 |   |  10.2 |
-| frame name program 1                                                        |        | 0:20 |   |   4.6 |
-| frame loop program                                                          |        | 0:37 |   |   8.5 |
-| grade task                                                                  |        | 2:32 |   |  35.1 |
-| build boost                                                                 |        | 1:03 |   |  14.5 |
-| chapter 4                                                                   |        | 1:05 |   |  15.0 |
-| building boost and witty again                                              |        | 0:14 |   |   3.2 |
-| witty hello                                                                 |        | 0:38 |   |   8.8 |
+| Tasks                                                                       | 8:27   |      |   | 100.0 |
+| Setup CMake                                                                 |        | 0:44 |   |   8.7 |
+| frame name program 1                                                        |        | 0:20 |   |   3.9 |
+| frame loop program                                                          |        | 0:37 |   |   7.3 |
+| grade task                                                                  |        | 2:32 |   |  30.0 |
+| build boost                                                                 |        | 1:03 |   |  12.4 |
+| chapter 4                                                                   |        | 1:05 |   |  12.8 |
+| building boost and witty again                                              |        | 0:14 |   |   2.8 |
+| witty hello                                                                 |        | 1:52 |   |  22.1 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end
 
@@ -137,5 +137,11 @@ if all goes well you should see the hello world.
 ** building boost and witty again
    CLOCK: [2018-01-09 Tue 11:01]--[2018-01-09 Tue 11:15] =>  0:14
 ** witty hello
+   CLOCK: [2018-01-09 Tue 13:30]--[2018-01-09 Tue 14:44] =>  1:14
    CLOCK: [2018-01-09 Tue 11:16]--[2018-01-09 Tue 11:54] =>  0:38
    Changed text, changed button margin, added fullstop after response ( + ".")
+
+compile:
+cd /home/niam/Development/myproject/hellowt2/build && CMAKE_INCLUDE_PATH=/home/niam/local/include CMAKE_LIBRARY_PATH=/home/niam/local/lib cmake .. && make
+
+  to run ./hello --docroot . --http-listen 0.0.0.0:8080/
