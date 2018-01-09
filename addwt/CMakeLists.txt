@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8.9)
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR})
+project(hello)
+include_directories($ENV{CMAKE_INCLUDE_PATH})
+find_package(Wt REQUIRED)
+add_executable(hello hello.cpp HelloApplication.cpp)
+target_link_libraries(hello ${Wt_LIBRARIES})
