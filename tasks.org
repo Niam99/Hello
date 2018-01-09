@@ -1,6 +1,18 @@
 * Notes
+** when starting emacs
+   ido mode
+   erc fill mode
+   set black
 
-** end-of-file = ctrl-d
+** Set precision
+  Sets the precision to be used by output operations as by a call to stream's member precision(n)
+  The precision determines the maximum number of digits that shall be output on insertion operations to express floating-point values, counting both the digits before and after the decimal point.
+  You must include <iomanip> to use this manipulator.
+
+
+
+** end-of-file
+    = ctrl-d
 
 ** Emacs keybindings
 
@@ -23,23 +35,26 @@
 -delete line: c-k
 -clock in: c-c c-x c-i
 -clock out: c-c c-x c-o
--update clock grid
+-update clock grid c-c c-c
 
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-09 Tue 09:57]
+#+CAPTION: Clock summary at [2018-01-09 Tue 11:54]
 | <75>                                                                        |        |      |   |       |
 | Headline                                                                    | Time   |      |   |     % |
 |-----------------------------------------------------------------------------+--------+------+---+-------|
-| *Total time*                                                                | *5:16* |      |   | 100.0 |
+| *Total time*                                                                | *7:13* |      |   | 100.0 |
 |-----------------------------------------------------------------------------+--------+------+---+-------|
-| Tasks                                                                       | 5:16   |      |   | 100.0 |
-| Setup CMake                                                                 |        | 0:44 |   |  13.9 |
-| frame name program 1                                                        |        | 0:20 |   |   6.3 |
-| frame loop program                                                          |        | 0:37 |   |  11.7 |
-| grade task                                                                  |        | 2:32 |   |  48.1 |
-| build boost                                                                 |        | 1:03 |   |  19.9 |
+| Tasks                                                                       | 7:13   |      |   | 100.0 |
+| Setup CMake                                                                 |        | 0:44 |   |  10.2 |
+| frame name program 1                                                        |        | 0:20 |   |   4.6 |
+| frame loop program                                                          |        | 0:37 |   |   8.5 |
+| grade task                                                                  |        | 2:32 |   |  35.1 |
+| build boost                                                                 |        | 1:03 |   |  14.5 |
+| chapter 4                                                                   |        | 1:05 |   |  15.0 |
+| building boost and witty again                                              |        | 0:14 |   |   3.2 |
+| witty hello                                                                 |        | 0:38 |   |   8.8 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end
 
@@ -120,4 +135,9 @@ http://localhost:8080
 if all goes well you should see the hello world.
 
 ** chapter 4
-   CLOCK: [2018-01-09 Tue 09:56]
+   CLOCK: [2018-01-09 Tue 09:56]--[2018-01-09 Tue 11:01] =>  1:05
+** building boost and witty again
+   CLOCK: [2018-01-09 Tue 11:01]--[2018-01-09 Tue 11:15] =>  0:14
+** witty hello
+   CLOCK: [2018-01-09 Tue 11:16]--[2018-01-09 Tue 11:54] =>  0:38
+   Changed text, changed button margin, added fullstop after response ( + ".")
