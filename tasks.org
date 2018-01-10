@@ -34,25 +34,27 @@
 -clock in: c-c c-x c-i
 -clock out: c-c c-x c-o
 -update clock grid c-c c-c
+--not emacs -- highlight, then middleclick to paste highlighted content
 
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-09 Tue 14:44]
-| <75>                                                                        |        |      |   |       |
-| Headline                                                                    | Time   |      |   |     % |
-|-----------------------------------------------------------------------------+--------+------+---+-------|
-| *Total time*                                                                | *8:27* |      |   | 100.0 |
-|-----------------------------------------------------------------------------+--------+------+---+-------|
-| Tasks                                                                       | 8:27   |      |   | 100.0 |
-| Setup CMake                                                                 |        | 0:44 |   |   8.7 |
-| frame name program 1                                                        |        | 0:20 |   |   3.9 |
-| frame loop program                                                          |        | 0:37 |   |   7.3 |
-| grade task                                                                  |        | 2:32 |   |  30.0 |
-| build boost                                                                 |        | 1:03 |   |  12.4 |
-| chapter 4                                                                   |        | 1:05 |   |  12.8 |
-| building boost and witty again                                              |        | 0:14 |   |   2.8 |
-| witty hello                                                                 |        | 1:52 |   |  22.1 |
+#+CAPTION: Clock summary at [2018-01-10 Wed 10:19]
+| <75>                                                                        |         |      |   |       |
+| Headline                                                                    | Time    |      |   |     % |
+|-----------------------------------------------------------------------------+---------+------+---+-------|
+| *Total time*                                                                | *11:04* |      |   | 100.0 |
+|-----------------------------------------------------------------------------+---------+------+---+-------|
+| Tasks                                                                       | 11:04   |      |   | 100.0 |
+| Setup CMake                                                                 |         | 0:44 |   |   6.6 |
+| frame name program 1                                                        |         | 0:20 |   |   3.0 |
+| frame loop program                                                          |         | 0:37 |   |   5.6 |
+| grade task                                                                  |         | 2:32 |   |  22.9 |
+| build boost                                                                 |         | 1:03 |   |   9.5 |
+| chapter 4                                                                   |         | 1:05 |   |   9.8 |
+| building boost and witty again                                              |         | 0:14 |   |   2.1 |
+| witty hello                                                                 |         | 1:52 |   |  16.9 |
+| witty add                                                                   |         | 2:37 |   |  23.6 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end
 
@@ -145,3 +147,9 @@ compile:
 cd /home/niam/Development/myproject/hellowt2/build && CMAKE_INCLUDE_PATH=/home/niam/local/include CMAKE_LIBRARY_PATH=/home/niam/local/lib cmake .. && make
 
   to run ./hello --docroot . --http-listen 0.0.0.0:8080/
+
+** witty add
+   CLOCK: [2018-01-10 Wed 09:13]--[2018-01-10 Wed 10:17] =>  1:04
+   CLOCK: [2018-01-09 Tue 20:12]--[2018-01-09 Tue 20:47] =>  0:35
+   CLOCK: [2018-01-09 Tue 15:00]--[2018-01-09 Tue 15:58] =>  0:58
+"stoi changes string to int, to_string converts int to string"
