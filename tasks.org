@@ -4,11 +4,6 @@
    erc fill mode
    set black
 
-** Set precision
-  Sets the precision to be used by output operations as by a call to stream's member precision(n)
-  The precision determines the maximum number of digits that shall be output on insertion operations to express floating-point values, counting both the digits before and after the decimal point.
-  You must include <iomanip> to use this manipulator.
-
 ** end-of-file
     = ctrl-d
 
@@ -39,22 +34,23 @@
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-10 Wed 10:19]
+#+CAPTION: Clock summary at [2018-01-10 Wed 11:40]
 | <75>                                                                        |         |      |   |       |
 | Headline                                                                    | Time    |      |   |     % |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| *Total time*                                                                | *11:04* |      |   | 100.0 |
+| *Total time*                                                                | *12:00* |      |   | 100.0 |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| Tasks                                                                       | 11:04   |      |   | 100.0 |
-| Setup CMake                                                                 |         | 0:44 |   |   6.6 |
-| frame name program 1                                                        |         | 0:20 |   |   3.0 |
-| frame loop program                                                          |         | 0:37 |   |   5.6 |
-| grade task                                                                  |         | 2:32 |   |  22.9 |
-| build boost                                                                 |         | 1:03 |   |   9.5 |
-| chapter 4                                                                   |         | 1:05 |   |   9.8 |
-| building boost and witty again                                              |         | 0:14 |   |   2.1 |
-| witty hello                                                                 |         | 1:52 |   |  16.9 |
-| witty add                                                                   |         | 2:37 |   |  23.6 |
+| Tasks                                                                       | 12:00   |      |   | 100.0 |
+| Setup CMake                                                                 |         | 0:44 |   |   6.1 |
+| frame name program 1                                                        |         | 0:20 |   |   2.8 |
+| frame loop program                                                          |         | 0:37 |   |   5.1 |
+| grade task                                                                  |         | 2:32 |   |  21.1 |
+| build boost                                                                 |         | 1:03 |   |   8.8 |
+| chapter 4                                                                   |         | 1:05 |   |   9.0 |
+| building boost and witty again                                              |         | 0:14 |   |   1.9 |
+| witty hello                                                                 |         | 1:52 |   |  15.6 |
+| witty add                                                                   |         | 2:37 |   |  21.8 |
+| video guides                                                                |         | 0:56 |   |   7.8 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end
 
@@ -76,6 +72,10 @@
    CLOCK: [2018-01-08 Mon 11:30]--[2018-01-08 Mon 14:02] =>  2:32
    chapter 3 in book
    gradeproj file
+  Set precision:
+  Sets the precision to be used by output operations as by a call to stream's member precision(n)
+  The precision determines the maximum number of digits that shall be output on insertion operations to express floating-point values, counting both the digits before and after the decimal point.
+  You must include <iomanip> to use this manipulator.
 
 ** build boost
    CLOCK: [2018-01-08 Mon 13:00]--[2018-01-08 Mon 14:03] =>  1:03
@@ -153,3 +153,12 @@ cd /home/niam/Development/myproject/hellowt2/build && CMAKE_INCLUDE_PATH=/home/n
    CLOCK: [2018-01-09 Tue 20:12]--[2018-01-09 Tue 20:47] =>  0:35
    CLOCK: [2018-01-09 Tue 15:00]--[2018-01-09 Tue 15:58] =>  0:58
 "stoi changes string to int, to_string converts int to string"
+** video guides
+   CLOCK: [2018-01-10 Wed 10:40]--[2018-01-10 Wed 11:36] =>  0:56
+email:
+C++
+https://www.youtube.com/watch?v=b5c2M0gVlgk
+https://www.youtube.com/watch?v=YzWLdGGD3-E
+Emacs:
+https://www.youtube.com/watch?v=16Rd46SE-20&list=PL7F907999BA1994A1
+-also check yt for other good videos
