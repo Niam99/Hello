@@ -34,23 +34,25 @@
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-10 Wed 11:40]
+#+CAPTION: Clock summary at [2018-01-11 Thu 13:05]
 | <75>                                                                        |         |      |   |       |
 | Headline                                                                    | Time    |      |   |     % |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| *Total time*                                                                | *12:00* |      |   | 100.0 |
+| *Total time*                                                                | *14:26* |      |   | 100.0 |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| Tasks                                                                       | 12:00   |      |   | 100.0 |
-| Setup CMake                                                                 |         | 0:44 |   |   6.1 |
-| frame name program 1                                                        |         | 0:20 |   |   2.8 |
-| frame loop program                                                          |         | 0:37 |   |   5.1 |
-| grade task                                                                  |         | 2:32 |   |  21.1 |
-| build boost                                                                 |         | 1:03 |   |   8.8 |
-| chapter 4                                                                   |         | 1:05 |   |   9.0 |
-| building boost and witty again                                              |         | 0:14 |   |   1.9 |
-| witty hello                                                                 |         | 1:52 |   |  15.6 |
-| witty add                                                                   |         | 2:37 |   |  21.8 |
-| video guides                                                                |         | 0:56 |   |   7.8 |
+| Tasks                                                                       | 14:26   |      |   | 100.0 |
+| Setup CMake                                                                 |         | 0:44 |   |   5.1 |
+| frame name program 1                                                        |         | 0:20 |   |   2.3 |
+| frame loop program                                                          |         | 0:37 |   |   4.3 |
+| grade task                                                                  |         | 2:32 |   |  17.6 |
+| build boost                                                                 |         | 1:03 |   |   7.3 |
+| chapter 4                                                                   |         | 1:05 |   |   7.5 |
+| building boost and witty again                                              |         | 0:14 |   |   1.6 |
+| witty hello                                                                 |         | 1:52 |   |  12.9 |
+| witty add                                                                   |         | 2:37 |   |  18.1 |
+| video guides                                                                |         | 0:56 |   |   6.5 |
+| helping PG with addwt                                                       |         | 0:15 |   |   1.7 |
+| learn cpp chapter 0 - 1.4a                                                  |         | 2:11 |   |  15.1 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end
 
@@ -162,6 +164,27 @@ https://www.youtube.com/watch?v=YzWLdGGD3-E
 Emacs:
 https://www.youtube.com/watch?v=16Rd46SE-20&list=PL7F907999BA1994A1
 -also check yt for other good videos
-** learn cpp chapter 0,1
-   CLOCK: [2018-01-11 Thu 10:35]
+** helping PG with addwt
+   CLOCK: [2018-01-11 Thu 11:40]--[2018-01-11 Thu 11:55] =>  0:15
+
+** learn cpp chapter 0 - 1.4a
+   CLOCK: [2018-01-11 Thu 11:56]--[2018-01-11 Thu 13:02] =>  1:06
+   CLOCK: [2018-01-11 Thu 10:35]--[2018-01-11 Thu 11:40] =>  1:05
+   :PROPERTIES:
+   :ORDERED:  t
+   :END:
    www.learncpp.com
+   project files: hello, double number
+*** notes
+int x - is a declaration statement
+x = 5 - is an assignment statement
+std::cout << x; - is an output statement
+2 + 3 - is an expression (a mathematical entity that evaluates a value)
+assignment:
+int x;
+x = 5;
+initialization:
+int x = 5;
+std::cin and cout always go on the left-hand side of the statement.
+std::cout is used to output a value (cout = character output) <<
+std::cin is used to get an input value (cin = character input) >>
