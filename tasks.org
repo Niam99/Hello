@@ -34,27 +34,27 @@
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-11 Thu 16:15]
+#+CAPTION: Clock summary at [2018-01-12 Fri 10:21]
 | <75>                                                                        |         |      |   |       |
 | Headline                                                                    | Time    |      |   |     % |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| *Total time*                                                                | *16:41* |      |   | 100.0 |
+| *Total time*                                                                | *17:01* |      |   | 100.0 |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| Tasks                                                                       | 16:41   |      |   | 100.0 |
-| Setup CMake                                                                 |         | 0:44 |   |   4.4 |
+| Tasks                                                                       | 17:01   |      |   | 100.0 |
+| Setup CMake                                                                 |         | 0:44 |   |   4.3 |
 | frame name program 1                                                        |         | 0:20 |   |   2.0 |
-| frame loop program                                                          |         | 0:37 |   |   3.7 |
-| grade task                                                                  |         | 2:32 |   |  15.2 |
-| build boost                                                                 |         | 1:03 |   |   6.3 |
-| chapter 4                                                                   |         | 1:05 |   |   6.5 |
+| frame loop program                                                          |         | 0:37 |   |   3.6 |
+| grade task                                                                  |         | 2:32 |   |  14.9 |
+| build boost                                                                 |         | 1:03 |   |   6.2 |
+| chapter 4                                                                   |         | 1:05 |   |   6.4 |
 | building boost and witty again                                              |         | 0:14 |   |   1.4 |
-| witty hello                                                                 |         | 1:52 |   |  11.2 |
-| witty add                                                                   |         | 2:37 |   |  15.7 |
-| video guides                                                                |         | 0:56 |   |   5.6 |
+| witty hello                                                                 |         | 1:52 |   |  11.0 |
+| witty add                                                                   |         | 2:37 |   |  15.4 |
+| video guides                                                                |         | 0:56 |   |   5.5 |
 | helping PG with addwt                                                       |         | 0:15 |   |   1.5 |
-| learn cpp chapter 0 - 1.4a                                                  |         | 2:11 |   |  13.1 |
-| learn cpp chapter 1.4 - 1.7                                                 |         | 0:30 |   |   3.0 |
-| learn cpp chapter 1.7-end                                                   |         | 1:45 |   |  10.5 |
+| learn cpp chapter 0 - 1.4a                                                  |         | 2:11 |   |  12.8 |
+| learn cpp chapter 1.4 - 1.7                                                 |         | 0:30 |   |   2.9 |
+| learn cpp chapter 1.7-end                                                   |         | 2:05 |   |  12.2 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end
 
@@ -193,5 +193,6 @@ std::cin is used to get an input value (cin = character input) >>
 ** learn cpp chapter 1.4 - 1.7
    CLOCK: [2018-01-11 Thu 13:15]--[2018-01-11 Thu 13:45] => 0:30
 ** learn cpp chapter 1.7-end
+   CLOCK: [2018-01-12 Fri 10:00]--[2018-01-12 Fri 10:20] =>  0:20
    CLOCK: [2018-01-11 Thu 14:30]--[2018-01-11 Thu 16:15] =>  1:45
    made calculator - project file in learncpp dir
