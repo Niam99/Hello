@@ -34,28 +34,28 @@
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-12 Fri 16:00]
+#+CAPTION: Clock summary at [2018-01-12 Fri 16:59]
 | <75>                                                                        |         |      |   |       |
 | Headline                                                                    | Time    |      |   |     % |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| *Total time*                                                                | *21:11* |      |   | 100.0 |
+| *Total time*                                                                | *22:10* |      |   | 100.0 |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| Tasks                                                                       | 21:11   |      |   | 100.0 |
-| Setup CMake                                                                 |         | 0:44 |   |   3.5 |
-| frame name program 1                                                        |         | 0:20 |   |   1.6 |
-| frame loop program                                                          |         | 0:37 |   |   2.9 |
-| grade task                                                                  |         | 2:32 |   |  12.0 |
-| build boost                                                                 |         | 1:03 |   |   5.0 |
-| chapter 4                                                                   |         | 1:05 |   |   5.1 |
+| Tasks                                                                       | 22:10   |      |   | 100.0 |
+| Setup CMake                                                                 |         | 0:44 |   |   3.3 |
+| frame name program 1                                                        |         | 0:20 |   |   1.5 |
+| frame loop program                                                          |         | 0:37 |   |   2.8 |
+| grade task                                                                  |         | 2:32 |   |  11.4 |
+| build boost                                                                 |         | 1:03 |   |   4.7 |
+| chapter 4                                                                   |         | 1:05 |   |   4.9 |
 | building boost and witty again                                              |         | 0:14 |   |   1.1 |
-| witty hello                                                                 |         | 1:52 |   |   8.8 |
-| witty add                                                                   |         | 2:37 |   |  12.4 |
-| video guides                                                                |         | 0:56 |   |   4.4 |
-| helping PG with addwt                                                       |         | 0:15 |   |   1.2 |
-| learn cpp chapter 0 - 1.4a                                                  |         | 2:11 |   |  10.3 |
-| learn cpp chapter 1.4 - 1.7                                                 |         | 0:30 |   |   2.4 |
-| learn cpp chapter 1.7-end                                                   |         | 2:05 |   |   9.8 |
-| make 21 game                                                                |         | 3:52 |   |  18.3 |
+| witty hello                                                                 |         | 1:52 |   |   8.4 |
+| witty add                                                                   |         | 2:37 |   |  11.8 |
+| video guides                                                                |         | 0:56 |   |   4.2 |
+| helping PG with addwt                                                       |         | 0:15 |   |   1.1 |
+| learn cpp chapter 0 - 1.4a                                                  |         | 2:11 |   |   9.8 |
+| learn cpp chapter 1.4 - 1.7                                                 |         | 0:30 |   |   2.3 |
+| learn cpp chapter 1.7-end                                                   |         | 2:05 |   |   9.4 |
+| make 21 game                                                                |         | 4:51 |   |  21.9 |
 | learncpp chapter 2                                                          |         | 0:18 |   |   1.4 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end
@@ -197,9 +197,9 @@ std::cin is used to get an input value (cin = character input) >>
 ** learn cpp chapter 1.7-end
    CLOCK: [2018-01-12 Fri 10:00]--[2018-01-12 Fri 10:20] =>  0:20
    CLOCK: [2018-01-11 Thu 14:30]--[2018-01-11 Thu 16:15] =>  1:45
-   made calculator - project file in learncpp dir
+   made calculator - project file in learncpp
 ** make 21 game
-   CLOCK: [2018-01-12 Fri 13:30]--[2018-01-12 Fri 16:00] =>  2:30
+   CLOCK: [2018-01-12 Fri 13:30]--[2018-01-12 Fri 16:59] =>  3:29
    CLOCK: [2018-01-12 Fri 11:06]--[2018-01-12 Fri 12:17] =>  1:11
    CLOCK: [2018-01-12 Fri 10:37]--[2018-01-12 Fri 10:48] =>  0:11
 ** learncpp chapter 2
