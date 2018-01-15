@@ -18,6 +18,7 @@ int main()
     std::cout << crisps << std::endl;
     std::cout << water << std::endl;
     std::cout << nothing << std::endl;
+    std::cout << "" << std::endl;
 
     std::string item1;
     double item1P;
@@ -52,6 +53,7 @@ int main()
     std::cout << crisps << std::endl;
     std::cout << water << std::endl;
     std::cout << nothing << std::endl;
+    std::cout << "" << std::endl;
 
     std::string item2;
     double item2P;
@@ -86,6 +88,7 @@ int main()
     std::cout << crisps << std::endl;
     std::cout << water << std::endl;
     std::cout << nothing << std::endl;
+    std::cout << "" << std::endl;
 
     std::string item3;
     double item3P;
