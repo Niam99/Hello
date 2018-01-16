@@ -136,7 +136,7 @@ int main()
 
             if (fightchoice == "fight")
             {
-                std::cout << "enemy HP: " << enemy1.health << std::endl;
+                std::cout << "enemy HP: " << boss.health << std::endl;
                 std::cout << "You attacked the dragon!" << std::endl;
                 std::cout << "You dealt " << player.attack << " dmg" << std::endl;
                 boss.health = boss.health - player.attack;
