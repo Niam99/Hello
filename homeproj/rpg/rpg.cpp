@@ -49,6 +49,7 @@ int main()
         std::cout << "A monster jumps out at you!!!!!" << std::endl;
         std::cout << "Luckily, you saw it coming and dodge the attack." << std::endl;
         std::cout << "(Dodging that attack cost 1 stamina)" << std::endl;
+        player.stamina = player.stamina - 1;
         std::cout << "HP: " << player.health << " ST: " << player.stamina << std::endl;
         std::cout << "The enemy is ready to fight" << std::endl;
 
@@ -77,6 +78,9 @@ int main()
             if (fightchoice == "run")
             {
                 std::cout << "You look for a way to escape.." << std::endl;
+                std::cout << "The enemy attacks while you hesitate" << std::endl;
+                player.health = player.health - enemy1.attack;
+                std::cout << "HP: " << player.health << " ST: " << player.stamina << std::endl;
                 std:: cout << "There is nowhere to run, you have to fight!" << std::endl;
             }
 
@@ -84,6 +88,14 @@ int main()
             {
                     std::cout << "YOU DEFEATED THE MONSTER!!!" << std::endl;
                     fight = false;
+            }
+
+            if (player.health == 0)
+            {
+                std::cout << "HP: " << player.health << std::endl;
+                std::cout << "You fall to the ground and everything begins to go dark..." << std::endl;
+                std::cout << "GAME OVER" << std::endl;
+                exit(0);
             }
 
         } while (fight == true);
