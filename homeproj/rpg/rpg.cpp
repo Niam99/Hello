@@ -11,6 +11,7 @@ public:
 
 int main()
 {
+    bool fightBossPath = false;
     bool fight = false;
     Character player;
     Character enemy1;
@@ -24,7 +25,7 @@ int main()
     enemy1.attack = 10;
     boss.health = 150;
     boss.stamina = 5;
-    boss.attack = 30;
+    boss.attack = 25;
 
     std::cout << "What is your name?" << std::endl;
     std::string pname;
@@ -51,6 +52,7 @@ int main()
         std::cout << "(Dodging that attack cost 1 stamina)" << std::endl;
         player.stamina = player.stamina - 1;
         std::cout << "HP: " << player.health << " ST: " << player.stamina << std::endl;
+        std::cout << "" << std::endl;
         std::cout << "The enemy is ready to fight" << std::endl;
 
         fight = true;
@@ -71,6 +73,8 @@ int main()
                 std::cout << "enemy HP: " << enemy1.health << std::endl;
                 std::cout << "The enemy strikes back!!" << std::endl;
                 std::cout << "You lose " << enemy1.attack << " HP" << std::endl;
+                std::cout << "" << std::endl;
+                std::cout << "HP: " << player.health << " ST: " << player.stamina << std::endl;
                 player.health = player.health - enemy1.attack;
 
             }
@@ -82,11 +86,15 @@ int main()
                 player.health = player.health - enemy1.attack;
                 std::cout << "HP: " << player.health << " ST: " << player.stamina << std::endl;
                 std:: cout << "There is nowhere to run, you have to fight!" << std::endl;
+                std::cout << "" << std::endl;
             }
 
             if (enemy1.health == 0)
             {
                     std::cout << "YOU DEFEATED THE MONSTER!!!" << std::endl;
+                    std::cout << "The monster's corpse vanishes revealing a golden sword!" << std::endl;
+                    std::cout << "You pick up this sword, increasing your attack power by 50 points!" << std::endl;
+                    fightBossPath = true;
                     fight = false;
             }
 
@@ -99,6 +107,11 @@ int main()
             }
 
         } while (fight == true);
+    }
+
+    if (choice1 == "rightpath" || fightBossPath == true)
+    {
+        std::cout << "BOSS FIGHT" << std::endl;
     }
 
 }
