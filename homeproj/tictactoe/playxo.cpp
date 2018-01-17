@@ -12,6 +12,8 @@ int main()
     char square8('8');
     char square9('9');
 
+    std::cout << "IF A PLAYER HAS CLEARLY WON, FILL IN THE REST OF THE GRID WITH -" << std::endl;
+
     std::cout << "    " << square1 << "    |    " << square2 << "    |    " << square3 << std::endl;
     std::cout << "    -----+---------+------" << std::endl;
     std::cout << "    " << square4 << "    |    " << square5 << "    |    " << square6 << std::endl;
@@ -110,4 +112,71 @@ int main()
             turn = 1;
         }
     } while (turnCount < 9);
+
+    bool GameOver = false;
+    char winIcon;
+
+    if (square1 != '1')
+    {
+        if (square2 == square1 && square3 == square1) {
+            GameOver = true;
+            winIcon = square1;
+        }
+
+        if (square4 == square1 && square7 == square1) {
+            GameOver = true;
+            winIcon = square1;
+        }
+    }
+
+    if (square9 != '9')
+    {
+        if (square3 == square9 && square6 == square9) {
+            GameOver = true;
+            winIcon = square9;
+        }
+
+        if (square7 == square9 && square8 == square9) {
+            GameOver = true;
+            winIcon = square9;
+        }
+    }
+
+    if (square5 != '5')
+    {
+        if (square1 == square5 && square9 == square5) {
+            GameOver = true;
+            winIcon = square5;
+        }
+
+        if (square2 == square5 && square8 == square5) {
+            GameOver = true;
+            winIcon = square5;
+        }
+
+        if (square4 == square5 && square6 == square5)
+        {
+            GameOver = true;
+            winIcon = square5;
+        }
+
+        if (square3 == square5 && square7 == square5)
+        {
+            GameOver = true;
+            winIcon = square5;
+        }
+    }
+
+    if (square1 != '1' && square2 != '2' && square3 != '3' &&
+        square4 != '4' && square5 != '5' && square6 != '6' &&
+        square7 != '7' && square8 != '8' && square9 != '9' && GameOver == false)
+    {
+        std::cout << "DRAW!!!!!!" << std::endl;
+        exit(0);
+    }
+
+    if (GameOver == true)
+    {
+        std::cout << winIcon << " WINS!!!!" << std::endl;
+    }
 }
