@@ -44,6 +44,7 @@ int main()
     std::cout << "-----------------------------------------------" << std::endl;
 
     std::cout << "" << std::endl;
+    std::cout << " NOTE - when changing variable names, try to keep within 7 characters" << std::endl;
     std::cout << "What would you like to change name 1 to?" << std::endl;
     std::cin >> name1;
     std::cout << "What would you like to change name 2 to?" << std::endl;
