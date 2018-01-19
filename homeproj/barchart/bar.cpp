@@ -73,7 +73,8 @@ int main()
 
     bool setlength = true;
     std::cout << "" << std::endl;
-    std::cout << "Edit the length of bars using === until you are happy with the result" << std::endl;
+    std::cout << "Add .. then spaces until you reach the beginning of the bar" << std::endl;
+    std::cout << "Then, edit the length of the bars using ====" << std::endl;
 
     do
     {
