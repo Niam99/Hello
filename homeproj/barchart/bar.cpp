@@ -56,7 +56,7 @@ int main()
     std::cin >> name5;
     std::cout << "" << std::endl;
 
-    std::cout << "NAME - 0       " << "|" << var1 << "|" << var2 << "|" << var3 << "|"
+    std::cout << "NAME - 0   " << "|" << var1 << "|" << var2 << "|" << var3 << "|"
               << var4 << "|" << var5 << "|" << var6 << "|" << var7 << "|"
               << var8 << "|" << var9 << "|" << var10 << "|" << std::endl;
     std::cout << "-----------------------------------------------" << std::endl;
@@ -89,7 +89,7 @@ int main()
         std::cout << "Edit the length of " << name5 <<  std::endl;
         std::cin >> name5length;
 
-        std::cout << "NAME - 0       " << "|" << var1 << "|" << var2 << "|" << var3 << "|"
+        std::cout << "NAME - 0   " << "|" << var1 << "|" << var2 << "|" << var3 << "|"
               << var4 << "|" << var5 << "|" << var6 << "|" << var7 << "|"
               << var8 << "|" << var9 << "|" << var10 << "|" << std::endl;
         std::cout << "-----------------------------------------------" << std::endl;
@@ -124,7 +124,7 @@ int main()
     std::cout << "Here is your final bar chart: " << std::endl;
     std::cout << "" << std::endl;
 
-     std::cout << "NAME - 0      " << "|" << var1 << "|" << var2 << "|" << var3 << "|"
+     std::cout << "NAME - 0   " << "|" << var1 << "|" << var2 << "|" << var3 << "|"
               << var4 << "|" << var5 << "|" << var6 << "|" << var7 << "|"
               << var8 << "|" << var9 << "|" << var10 << "|" << std::endl;
     std::cout << "-----------------------------------------------" << std::endl;
