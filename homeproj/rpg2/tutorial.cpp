@@ -27,7 +27,7 @@ int tutorial()
     boss.stamina = 5;
     boss.attack = 25;
 
-    std::cout << "What is your name?" << std::endl;
+    std::cout << "What is your name????" << std::endl;
     std::string pname;
     std::cin >> pname;
 
@@ -164,7 +164,7 @@ int tutorial()
                     std::cout << "The gold is yours :)" << std::endl;
                     std::cout << "Congratulations " << pname << " , you have completed the tutorial mission"
                               << std::endl;
-                    exit(0);
+                    fightBoss = false;
             }
 
             if (player.health <= 0)
