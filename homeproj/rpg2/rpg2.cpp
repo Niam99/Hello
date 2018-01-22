@@ -10,6 +10,7 @@ public:
     int intel;
     int dex;
     int XP;
+    int LVL;
 };
 
 class Enemy {
@@ -30,14 +31,15 @@ int main()
     player1.intel = 0;
     player1.dex = 0;
     player1.XP = 0;
+    player1.LVL = 1;
 
     std::cout << "Hey, you!" << std::endl;
     std::cout << "What is your name?" << std::endl;
     std::cin >> player1.name;
     std::cout << "Hello, " << player1.name << std::endl;
 
-    bool statSet = false;
 
+    bool statSet = false;
     do
     {
         int totalPoints = 20;
@@ -145,6 +147,8 @@ int main()
         {
             std::cout << "You defeated the bandit!!" << std::endl;
             std::cout << "The injured bandit runs off" << std::endl;
+            std::cout << "You earned 10 XP" << std::endl;
+            player1.XP = player1.XP + 10;
             fightState = false;
         }
 
@@ -158,4 +162,18 @@ int main()
     } while (fightState == true);
 
     std::cout << "--------------------------------" << std::endl;
+    if (player1.XP == 10)
+    {
+        std::cout << "LEVEL UP!!" << std::endl;
+        std::cout << player1.LVL << " => " << player1.LVL + 1 << std::endl;
+        player1.LVL = player1.LVL + 1;
+        player1.str = player1.str + 2;
+        player1.intel = player1.intel + 2;
+        player1.dex = player1.dex + 2;
+        std::cout << "strength increased! str: " << player1.str << std::endl;
+        std::cout << "intelligence increased! intel: " << player1.intel << std::endl;
+        std::cout << "dexterity increased! dex: " << player1.dex << std::endl;
+        player1.XP = player1.XP - 10;
+    }
+    std::cout << "----------------------------------" << std::endl;
 }
