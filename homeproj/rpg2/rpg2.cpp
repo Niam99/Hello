@@ -33,10 +33,11 @@ int main()
     player1.XP = 0;
     player1.LVL = 1;
 
+
     std::cout << "Hey, you!" << std::endl;
     std::cout << "What is your name?" << std::endl;
     std::cin >> player1.name;
-    std::cout << "Hello, " << player1.name << std::endl;
+    std::cout << "Hello, " << player1.name << std::endl; 
 
 
     bool statSet = false;
