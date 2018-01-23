@@ -288,6 +288,19 @@ int main()
     if (location == "town")
     {
         std::cout << "You enter the town, it is fairly busy" << std::endl;
+        std::cout << "Man: Hey..You! Have this free bag" << std::endl;
+        std::cout << "BAG Aquired - you can now carry things" << std::endl;
     }
+
+    std::string bag[4] = {"apple", "knife", "potion", "armguard"};
+    std::cout << "You look inside the bag" << std::endl;
+    std::cout << "The bag contains:" << std::endl;
+
+    for (int i = 0; i < 4; i++)
+    {
+        std::cout << bag[i] << std::endl;
+    }
+
+    std::cout << "You inspect the " << bag[3] << std::endl;
 
 }
