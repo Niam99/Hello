@@ -177,4 +177,117 @@ int main()
         player1.XP = player1.XP - 10;
     }
     std::cout << "----------------------------------" << std::endl;
+
+    std::cout << "After defeating the bandit, you collect the vegetables." << std::endl;
+    std::cout << "You return home" << std::endl;
+    std::cout << "----------------------------------------------------" << std::endl;
+    std::cout << "Grandpa: What happened to you???!!!" << std::endl;
+    std::cout << "You explain what happened..........." << std::endl;
+    std::cout << "Grandpa: Bandits huh....better be more careful next time" << std::endl;
+    std::cout << "Grandpa: Anyway, go rest!" << std::endl;
+    std::cout << "------------------------------------" << std::endl;
+    std::cout << "You wake up from your sleep, feeling better" << std::endl;
+    player1.health = 100;
+    std::cout << "HP: " << player1.health << std::endl;
+    std::cout << "------------------------------------" << std::endl;
+
+    std::string location;
+
+    std::cout << "Where do you want to go today? forest / town" << std::endl;
+    std::string choiceL;
+    std::cin >> choiceL;
+
+    if (choiceL == "forest")
+    {
+        std::cout << "You go to the forest" << std::endl;
+        location = "forest";
+    }
+    if (choiceL == "town")
+    {
+        std::cout << "You go to town" << std::endl;
+        location = "town";
+    }
+
+    if (location == "forest")
+    {
+        Enemy slime;
+        slime.name = "slime";
+        slime.health = 25;
+        slime.str = 5;
+
+        std::cout << "You explore the forest" << std::endl;
+        std::cout << "There is not much here" << std::endl;
+        std::cout << "As you leave a slime jumps out at you!!" << std::endl;
+
+        fightState = true;
+
+        do
+        {
+            std::cout << "What would you like to do???" << std::endl;
+            std::cout << "| fight | talk |" << std::endl;
+            std::string choice;
+            std::cin >> choice;
+
+            if (choice == "fight")
+            {
+                std::cout << "HP: " << player1.health << std::endl;
+                std::cout << "enemy HP: " << slime.health << std::endl;
+                std::cout << "You attack the " << slime.name << " !" << std::endl;
+                std::cout << "You dealt " << player1.str << " dmg" << std::endl;
+                slime.health = slime.health - player1.str;
+                std::cout << "enemy HP: " << slime.health << std::endl;
+                std::cout << "The enemy strikes back!" << std::endl;
+                std::cout << "You lose " << slime.str << " HP" << std::endl;
+                player1.health = player1.health - slime.str;
+                std::cout << "HP: " << player1.health << std::endl;
+                std::cout << "----------------------------------------------" << std::endl;
+            }
+
+            if (choice == "talk")
+            {
+            std::cout << "You can't talk to a slime!!!" << std::endl;
+            }
+
+            if (slime.health <= 0)
+            {
+                std::cout << "You defeated the slime!!" << std::endl;
+                std::cout << "The slime dissolves" << std::endl;
+                std::cout << "You earned 10 XP" << std::endl;
+                player1.XP = player1.XP + 10;
+                fightState = false;
+            }
+
+            if (player1.health <= 0)
+            {
+                std::cout << "HP: " << player1.health << std::endl;
+                std::cout << "You fall to the ground and everything begins to go dark..." << std::endl;
+                std::cout << "GAME OVER" << std::endl;
+                exit(0);
+            }
+        } while (fightState == true);
+
+        std::cout << "--------------------------------" << std::endl;
+        if (player1.XP == 10)
+        {
+            std::cout << "LEVEL UP!!" << std::endl;
+            std::cout << player1.LVL << " => " << player1.LVL + 1 << std::endl;
+            player1.LVL = player1.LVL + 1;
+            player1.str = player1.str + 2;
+            player1.intel = player1.intel + 2;
+            player1.dex = player1.dex + 2;
+            std::cout << "strength increased! str: " << player1.str << std::endl;
+            std::cout << "intelligence increased! intel: " << player1.intel << std::endl;
+            std::cout << "dexterity increased! dex: " << player1.dex << std::endl;
+            player1.XP = player1.XP - 10;
+        }
+        std::cout << "----------------------------------" << std::endl;
+        std::cout << "After that, you leave the forest and head to town" << std::endl;
+        location = "town";
+    }
+
+    if (location == "town")
+    {
+        std::cout << "You enter the town, it is fairly busy" << std::endl;
+    }
+
 }
