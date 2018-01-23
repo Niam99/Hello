@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "tutorial.hpp"
+#include "play21.hpp"
 
 class Player {
 public:
@@ -288,7 +289,7 @@ int main()
     if (location == "town")
     {
         std::cout << "You enter the town, it is fairly busy" << std::endl;
-        std::cout << "Man: Hey..You! Have this free bag" << std::endl;
+        std::cout << "Man: Hey..You! Have this bag, I found it, but don't need it" << std::endl;
         std::cout << "BAG Aquired - you can now carry things" << std::endl;
     }
 
@@ -301,6 +302,18 @@ int main()
         std::cout << bag[i] << std::endl;
     }
 
-    std::cout << "You inspect the " << bag[3] << std::endl;
+    std::cout <<  "These will definetly be useful later..." << std::endl;
+    std::cout << "You thank the man, and continue through the town..." << std::endl;
+    std::cout << "------------------------------------------------------" << std::endl;
+    std::cout << "You come across a man playing cards at a table.." << std::endl;
+    std::cout << "Jack: Hm... You wanna play a game of blackjack?? (yes/no) " << std::endl;
+    std::string playChoice;
+    std::cin >> playChoice;
 
+    if (playChoice == "yes")
+    {
+        std::cout << "Jack: HAHAHA, that's the spirit." << std::endl;
+        play21();
+    }
+    std::cout << "Jack: That was fun, come again sometime" << std::endl;
 }
