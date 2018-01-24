@@ -34,43 +34,44 @@
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-24 Wed 11:07]
+#+CAPTION: Clock summary at [2018-01-24 Wed 15:19]
 | <75>                                                                        |         |      |   |       |
 | Headline                                                                    | Time    |      |   |     % |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| *Total time*                                                                | *61:05* |      |   | 100.0 |
+| *Total time*                                                                | *63:42* |      |   | 100.0 |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| Tasks                                                                       | 61:05   |      |   | 100.0 |
+| Tasks                                                                       | 63:42   |      |   | 100.0 |
 | Setup CMake                                                                 |         | 0:44 |   |   1.2 |
 | frame name program 1                                                        |         | 0:20 |   |   0.5 |
 | frame loop program                                                          |         | 0:37 |   |   1.0 |
-| grade task                                                                  |         | 2:32 |   |   4.1 |
-| build boost                                                                 |         | 1:03 |   |   1.7 |
-| chapter 4                                                                   |         | 1:05 |   |   1.8 |
+| grade task                                                                  |         | 2:32 |   |   4.0 |
+| build boost                                                                 |         | 1:03 |   |   1.6 |
+| chapter 4                                                                   |         | 1:05 |   |   1.7 |
 | building boost and witty again                                              |         | 0:14 |   |   0.4 |
-| witty hello                                                                 |         | 1:52 |   |   3.1 |
-| witty add                                                                   |         | 2:37 |   |   4.3 |
+| witty hello                                                                 |         | 1:52 |   |   2.9 |
+| witty add                                                                   |         | 2:37 |   |   4.1 |
 | video guides                                                                |         | 0:56 |   |   1.5 |
 | helping PG with addwt                                                       |         | 0:15 |   |   0.4 |
-| learn cpp chapter 0 - 1.4a                                                  |         | 2:11 |   |   3.6 |
+| learn cpp chapter 0 - 1.4a                                                  |         | 2:11 |   |   3.4 |
 | learn cpp chapter 1.4 - 1.7                                                 |         | 0:30 |   |   0.8 |
-| learn cpp chapter 1.7-end                                                   |         | 2:05 |   |   3.4 |
-| make 21 game                                                                |         | 4:51 |   |   7.9 |
-| learncpp chapter 2                                                          |         | 1:57 |   |   3.2 |
-| shop checkout program                                                       |         | 1:53 |   |   3.1 |
-| learncpp chapter 3                                                          |         | 3:13 |   |   5.3 |
-| text rpg game                                                               |         | 4:51 |   |   7.9 |
-| tictactoe                                                                   |         | 4:26 |   |   7.3 |
-| learncpp chapter 4                                                          |         | 1:38 |   |   2.7 |
-| pyramids                                                                    |         | 2:57 |   |   4.8 |
-| learncpp chapter 5                                                          |         | 1:38 |   |   2.7 |
-| barchart                                                                    |         | 3:41 |   |   6.0 |
-| textrpg 2                                                                   |         | 1:21 |   |   2.2 |
-| textrpg 2 cnt                                                               |         | 3:28 |   |   5.7 |
-| textrpg 2 cnt2                                                              |         | 4:30 |   |   7.4 |
+| learn cpp chapter 1.7-end                                                   |         | 2:05 |   |   3.3 |
+| make 21 game                                                                |         | 4:51 |   |   7.6 |
+| learncpp chapter 2                                                          |         | 1:57 |   |   3.1 |
+| shop checkout program                                                       |         | 1:53 |   |   3.0 |
+| learncpp chapter 3                                                          |         | 3:13 |   |   5.0 |
+| text rpg game                                                               |         | 4:51 |   |   7.6 |
+| tictactoe                                                                   |         | 4:26 |   |   7.0 |
+| learncpp chapter 4                                                          |         | 1:38 |   |   2.6 |
+| pyramids                                                                    |         | 2:57 |   |   4.6 |
+| learncpp chapter 5                                                          |         | 1:38 |   |   2.6 |
+| barchart                                                                    |         | 3:41 |   |   5.8 |
+| textrpg 2                                                                   |         | 1:21 |   |   2.1 |
+| textrpg 2 cnt                                                               |         | 3:28 |   |   5.4 |
+| textrpg 2 cnt2                                                              |         | 4:30 |   |   7.1 |
 | research arrays                                                             |         | 0:29 |   |   0.8 |
-| research learncpp                                                           |         | 1:22 |   |   2.2 |
-| location task                                                               |         | 1:49 |   |   3.0 |
+| research learncpp                                                           |         | 1:22 |   |   2.1 |
+| location task                                                               |         | 2:37 |   |   4.1 |
+| redo 21 game to improve                                                     |         | 1:49 |   |   2.9 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end
 
@@ -316,3 +317,5 @@ exit(0); - terminate program.
    --2 --Calculate distance between, and time
    --3 --Compare code
    --4 --Add another location to destination
+** redo 21 game to improve
+   CLOCK: [2018-01-24 Wed 13:30]--[2018-01-24 Wed 15:19] =>  1:49
