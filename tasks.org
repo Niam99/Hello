@@ -308,7 +308,11 @@ exit(0); - terminate program.
 ** research learncpp
    CLOCK: [2018-01-23 Tue 15:15]--[2018-01-23 Tue 16:37] =>  1:22
 ** location task
+   CLOCK: [2018-01-24 Wed 11:30]--[2018-01-24 Wed 11:56] =>  0:26
+   CLOCK: [2018-01-24 Wed 11:08]--[2018-01-24 Wed 11:30] =>  0:22
    CLOCK: [2018-01-24 Wed 10:27]--[2018-01-24 Wed 11:06] =>  0:39
    CLOCK: [2018-01-24 Wed 09:14]--[2018-01-24 Wed 10:24] =>  1:10
    --1 --Make class, set location, take user input, display details
    --2 --Calculate distance between, and time
+   --3 --Compare code
+   --4 --Add another location to destination

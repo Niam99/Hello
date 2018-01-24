@@ -12,6 +12,7 @@ int main()
 {
     location place1;
     location place2;
+    location place3;
     location home;
     home.name = "Home";
     home.distance = 0;
@@ -119,4 +120,57 @@ int main()
     std::cout << "Travelling between " << place1.name << " and " << place2.name <<
         " is " << distanceCompared << " miles." << std::endl;
     std::cout << "It will take " << timeCompared << " mins." << std::endl;
+    std::cout << "-------------------------------------------------" << std::endl;
+
+    std::cout << "Would you like to add another destination? yes/no" << std::endl;
+    std::string yesno;
+    std::cin >> yesno;
+
+    if (yesno == "yes")
+    {
+        std::cout << std::endl;
+        std::cout << "Which location?" << std::endl;
+        std::string choice3;
+        std::cin >> choice3;
+        std::cout << std::endl;
+
+        if (choice3 == london.name)
+        {
+            place3.name = london.name;
+            place3.distance = london.distance;
+            place3.travelTime = london.travelTime;
+        }
+
+        if (choice3 == stevenage.name)
+        {
+            place3.name = stevenage.name;
+            place3.distance = stevenage.distance;
+            place3.travelTime = stevenage.travelTime;
+        }
+
+        if (choice3 == luton.name)
+        {
+            place3.name = luton.name;
+            place3.distance = luton.distance;
+            place3.travelTime = luton.travelTime;
+        }
+
+        if (place2.distance > place3.distance)
+        {
+            distanceCompared = place2.distance - place3.distance;
+            timeCompared = place2.travelTime - place3.travelTime;
+        }
+
+        if (place2.distance < place3.distance)
+        {
+            distanceCompared = place3.distance - place2.distance;
+            timeCompared = place3.travelTime - place2.travelTime;
+        }
+
+        std::cout << "Travelling between " << place2.name << " and " << place3.name <<
+            " is " << distanceCompared << " miles." << std::endl;
+        std::cout << "It will take another " << timeCompared << " mins." << std::endl;
+        std::cout << "-------------------------------------------------" << std::endl;
+    }
+
 }
