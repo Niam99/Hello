@@ -99,5 +99,24 @@ int main()
     std::cout << place2.name << std::endl;
     std::cout << place2.distance << " miles (from home)" << std::endl;
     std::cout << place2.travelTime << " mins (from home)" << std::endl;
+    std::cout << "-----------------------------------------------" << std::endl;
 
+    int distanceCompared;
+    int timeCompared;
+
+    if (place1.distance > place2.distance)
+    {
+        distanceCompared = place1.distance - place2.distance;
+        timeCompared = place1.travelTime - place2.travelTime;
+    }
+
+    if (place1.distance < place2.distance)
+    {
+        distanceCompared = place2.distance - place1.distance;
+        timeCompared = place2.travelTime - place1.travelTime;
+    }
+
+    std::cout << "Travelling between " << place1.name << " and " << place2.name <<
+        " is " << distanceCompared << " miles." << std::endl;
+    std::cout << "It will take " << timeCompared << " mins." << std::endl;
 }
