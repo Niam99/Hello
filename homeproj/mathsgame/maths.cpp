@@ -6,6 +6,7 @@
 #include "level1.hpp"
 #include "level2.hpp"
 #include "global.hpp"
+std::string hscores;
 
 int readf()
 {
@@ -16,6 +17,7 @@ int readf()
         while ( getline (myfile,line) )
         {
             std::cout << "SCORE-  " << line << '\n';
+            hscores = line;
         }
         myfile.close();
     }
@@ -52,6 +54,7 @@ int main()
         std::cin >> name;
         std::ofstream myfile;
         myfile.open ("highscore.txt");
+        myfile << hscores << std::endl;
         myfile << name << ": " << score << std::endl;
         myfile.close();
         std::cout << "Your score has been saved" << std::endl;
