@@ -2,6 +2,7 @@
 #include <string>
 #include <cstdlib>
 #include <ctime>
+#include <fstream>
 #include "level1.hpp"
 #include "level2.hpp"
 #include "global.hpp"
@@ -23,4 +24,24 @@ int main()
     level2();
 
      std::cout << "Your current score is now " << score << std::endl;
+
+     std::cout << "Would you like to save your score? yes/no" << std::endl;
+     std::string choice;
+     std::cin >> choice;
+
+     if(choice == "yes")
+     {
+         std::string name;
+         std::cout << "Enter your name: ";
+         std::cin >> name;
+         std::ofstream myfile;
+         myfile.open ("highscore.txt");
+         myfile << name << ": " << score << std::endl;
+         myfile.close();
+         std::cout << "Your score has been saved" << std::endl;
+     }
+     else
+     {
+         std::cout << "Thanks for playing" << std::endl;
+     }
 }
