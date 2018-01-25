@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <ctime>
 #include "level1.hpp"
+#include "level2.hpp"
 #include "global.hpp"
 
 int main()
@@ -16,5 +17,10 @@ int main()
     int temp = score;
     level1();
 
-    std::cout << "Your final score is = " << score << std::endl;
+    std::cout << "Your current score is = " << score << std::endl;
+
+    std::cout << "Level 2" << std::endl;
+    level2();
+
+     std::cout << "Your current score is now " << score << std::endl;
 }

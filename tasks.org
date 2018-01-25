@@ -34,17 +34,17 @@
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-25 Thu 11:26]
+#+CAPTION: Clock summary at [2018-01-25 Thu 11:56]
 | <75>                                                                        |         |      |   |       |
 | Headline                                                                    | Time    |      |   |     % |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| *Total time*                                                                | *67:12* |      |   | 100.0 |
+| *Total time*                                                                | *67:38* |      |   | 100.0 |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| Tasks                                                                       | 67:12   |      |   | 100.0 |
+| Tasks                                                                       | 67:38   |      |   | 100.0 |
 | Setup CMake                                                                 |         | 0:44 |   |   1.1 |
 | frame name program 1                                                        |         | 0:20 |   |   0.5 |
 | frame loop program                                                          |         | 0:37 |   |   0.9 |
-| grade task                                                                  |         | 2:32 |   |   3.8 |
+| grade task                                                                  |         | 2:32 |   |   3.7 |
 | build boost                                                                 |         | 1:03 |   |   1.6 |
 | chapter 4                                                                   |         | 1:05 |   |   1.6 |
 | building boost and witty again                                              |         | 0:14 |   |   0.3 |
@@ -64,9 +64,9 @@
 | learncpp chapter 4                                                          |         | 1:38 |   |   2.4 |
 | pyramids                                                                    |         | 2:57 |   |   4.4 |
 | learncpp chapter 5                                                          |         | 1:38 |   |   2.4 |
-| barchart                                                                    |         | 3:41 |   |   5.5 |
+| barchart                                                                    |         | 3:41 |   |   5.4 |
 | textrpg 2                                                                   |         | 1:21 |   |   2.0 |
-| textrpg 2 cnt                                                               |         | 3:28 |   |   5.2 |
+| textrpg 2 cnt                                                               |         | 3:28 |   |   5.1 |
 | textrpg 2 cnt2                                                              |         | 4:30 |   |   6.7 |
 | research arrays                                                             |         | 0:29 |   |   0.7 |
 | research learncpp                                                           |         | 1:22 |   |   2.0 |
@@ -74,7 +74,7 @@
 | redo 21 game to improve                                                     |         | 2:15 |   |   3.3 |
 | read/write file                                                             |         | 0:39 |   |   1.0 |
 | discussing tasks                                                            |         | 0:42 |   |   1.0 |
-| maths game                                                                  |         | 1:43 |   |   2.6 |
+| maths game                                                                  |         | 2:09 |   |   3.2 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end
 
@@ -327,6 +327,8 @@ exit(0); - terminate program.
 ** discussing tasks
    CLOCK: [2018-01-25 Thu 09:00]--[2018-01-25 Thu 09:42] =>  0:42
 ** maths game
+   CLOCK: [2018-01-25 Thu 13:10]
+   CLOCK: [2018-01-25 Thu 11:30]--[2018-01-25 Thu 11:56] =>  0:26
    CLOCK: [2018-01-25 Thu 09:42]--[2018-01-25 Thu 11:25] =>  1:43
    --1 -- make level 1, turn into function
 https://stackoverflow.com/questions/12290451/access-extern-variable-in-c-from-another-file
