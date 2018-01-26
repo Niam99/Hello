@@ -1,4 +1,8 @@
 * Notes
+** update distro
+su
+apt-get update
+apt-get dist upgrade
 ** when starting emacs
    ido mode
    erc fill mode
@@ -331,4 +335,4 @@ exit(0); - terminate program.
    CLOCK: [2018-01-25 Thu 11:30]--[2018-01-25 Thu 11:56] =>  0:26
    CLOCK: [2018-01-25 Thu 09:42]--[2018-01-25 Thu 11:25] =>  1:43
    --1 -- make level 1, turn into function
-https://stackoverflow.com/questions/12290451/access-extern-variable-in-c-from-another-file
+   https://stackoverflow.com/questions/12290451/access-extern-variable-in-c-from-another-file

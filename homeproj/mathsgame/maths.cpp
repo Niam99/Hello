@@ -53,7 +53,7 @@ int main()
         std::cout << "Enter your name: ";
         std::cin >> name;
         std::ofstream myfile;
-        myfile.open ("highscore.txt");
+        myfile.open ("highscore.txt", std::fstream::app);
         myfile << hscores << std::endl;
         myfile << name << ": " << score << std::endl;
         myfile.close();
